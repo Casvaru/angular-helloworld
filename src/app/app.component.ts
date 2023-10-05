@@ -7,8 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'helloworld';
+  user = {
+    name: 'Carlos',
+    age: 24,
+  }
 
-  newTitle() {
-    this.title="new Title"
+  btnDisable = true
+  stateOfButton = 'Seguir'
+  onChange (){
+    this.stateOfButton = 'Dejar de seguir '
   }
 }
